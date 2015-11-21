@@ -1,3 +1,3 @@
-The metamachine - rewritten for the web!
+metamachine - rewritten for the web!
 
 
