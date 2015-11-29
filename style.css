@@ -46,6 +46,13 @@ h1 {
 /*	border: 2px dotted red; /* visual help */
 }
 
+#debug {
+	z-index: 10;
+	margin-top: auto;
+	margin-left: 20px;
+	border: 2px dotted orange;
+}
+
 video#bigvid {
 
 	position: fixed;

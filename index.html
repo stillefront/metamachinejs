@@ -7,7 +7,7 @@
 
 		<link href="style.css" type="text/css" rel="stylesheet">
 
-		<script language="javascript" type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="main.js" async></script>
 	</head>
 
 	<body>
@@ -18,19 +18,24 @@
 
 			<div id="menu">
 				<ul>
-				<li> element 1 </li>
+				<li>element 1</li>
 				<li> element 2 </li>
 				</ul>
+					<div id="debug">
+						<p>clipname:</p><p id="clipname"></p>
+						<p>position begin:</p><p id="begin"></p>
+						<p>position middle:</p><p id="middle"></p>
+						<p>position end:</p><p id="end"></p>
+					</div>	
 			</div>
 			
 			<video muted autoplay loop poster="example.jpg" id="bigvid">  
-				<source src="/home/alexej/Dokumente/repos/metamachinejs/example.mp4" type="video/mp4">
+				<source src="example.mp4" type="video/mp4">
 			</video>
 
 
 			</div>
 		</div>
-
 	</body>
 
 </html>
