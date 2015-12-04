@@ -53,7 +53,7 @@ h1 {
 	border: 2px dotted orange;
 }
 
-video#bigvid {
+video {
 
 	position: fixed;
 	top: 50%;
@@ -65,6 +65,6 @@ video#bigvid {
     	z-index: -100;
     	-webkit-transform: translateX(-50%) translateY(-50%);
     	transform: translateX(-50%) translateY(-50%);
-    	background: url(polina.jpg) no-repeat;
+    	background: url(example.jpg) no-repeat;
     	background-size: cover;	
 }

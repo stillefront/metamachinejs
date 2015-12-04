@@ -5,6 +5,8 @@
 	<head>
                 <title>metamachine v.0.01</title>
 
+		<meta charset="UTF-8"> 
+
 		<link href="style.css" type="text/css" rel="stylesheet">
 
 		<script type="text/javascript" src="main.js" async></script>
@@ -17,10 +19,16 @@
 			</div>
 
 			<div id="menu">
-				<ul>
-				<li>element 1</li>
-				<li> element 2 </li>
-				</ul>
+				<!--
+				<input type="range" min="0" max="4" step="1" value"0">Abenteuer</input><br>
+				<input type="range" min="0" max="4" step="1" value"0">Geborgenheit</input><br>
+				<input type="range" min="0" max="4" step="1" value"0">körperlicher Genuss</input><br>
+				<input type="range" min="0" max="4" step="1" value"0">kulinarischer Genuss</input><br>
+				<input type="range" min="0" max="4" step="1" value"0">Chance</input><br>
+				<input type="range" min="0" max="4" step="1" value"0">Geselligkeit</input><br>
+				-->
+				<input id="videowahl" type="range" min="0" max="3" step="1" value"0"><p id="wert"></p></input>
+				<button onclick="videoWahl()">Test Input</button>
 					<div id="debug">
 						<p>clipname:</p><p id="clipname"></p>
 						<p>position begin:</p><p id="begin"></p>
@@ -29,8 +37,7 @@
 					</div>	
 			</div>
 			
-			<video muted autoplay loop poster="example.jpg" id="bigvid">  
-				<source src="example.mp4" type="video/mp4">
+			<video id="video" muted autoplay loop poster="example.jpg">  
 			</video>
 
 
