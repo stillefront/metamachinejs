@@ -41,16 +41,24 @@ h1 {
 
 #menu {
 	z-index: 10;
-	margin-top: auto;
-	margin-left: 20px;
+	/* margin-top: auto;
+	margin-left: 20px;*/
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background-color: black;
+	color: white;
+	font-size: 10pt;
 /*	border: 2px dotted red; /* visual help */
 }
 
 #debug {
 	z-index: 10;
-	margin-top: auto;
-	margin-left: 20px;
-	border: 2px dotted orange;
+/*	margin-top: auto;
+	margin-left: 20px; */
+	position: relative;
+	top: 0px;
+/*	border: 2px dotted orange; */
 }
 
 video {

@@ -14,7 +14,7 @@
 		<_media>video</_media>
 	</clip>
 	<clip>
-		<name>example2.mp4</name>
+		<name>example.mp4</name>
 		<abenteuer>5</abenteuer>
 		<geborgenheit>3</geborgenheit>
 		<geselligkeit>2</geselligkeit>
@@ -27,7 +27,7 @@
 		<_media>video</_media>
 	</clip>
 	<clip>
-		<name>v_21_03_01.mp4</name>
+		<name>example3.mp4</name>
 		<abenteuer>5</abenteuer>
 		<geborgenheit>0</geborgenheit>
 		<geselligkeit>0</geselligkeit>
@@ -40,7 +40,7 @@
 		<_media>video</_media>
 	</clip>
 	<clip>
-		<name>v_21_04_01.mp4</name>
+		<name>example4.mp4</name>
 		<abenteuer>5</abenteuer>
 		<geborgenheit>0</geborgenheit>
 		<geselligkeit>0</geselligkeit>

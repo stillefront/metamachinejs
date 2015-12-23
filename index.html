@@ -10,25 +10,30 @@
 		<link href="style.css" type="text/css" rel="stylesheet">
 
 		<script type="text/javascript" src="main.js" async></script>
+		<script type="text/javascript" src="querymain.js" async></script>
+		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
 	</head>
 
 	<body>
-		<div id="player">
+		<!---	<div id="player"> -->
 			<div id="header">
 				<h1>&lt/metamachine</h1>
 			</div>
 
 			<div id="menu">
-				<!--
-				<input type="range" min="0" max="4" step="1" value"0">Abenteuer</input><br>
-				<input type="range" min="0" max="4" step="1" value"0">Geborgenheit</input><br>
-				<input type="range" min="0" max="4" step="1" value"0">körperlicher Genuss</input><br>
-				<input type="range" min="0" max="4" step="1" value"0">kulinarischer Genuss</input><br>
-				<input type="range" min="0" max="4" step="1" value"0">Chance</input><br>
-				<input type="range" min="0" max="4" step="1" value"0">Geselligkeit</input><br>
-				-->
+				
+				<input id="attr1" type="range" min="0" max="4" step="1" value"0">Abenteuer</input><br>
+				<input id="attr2" type="range" min="0" max="4" step="1" value"0">Geborgenheit</input><br>
+				<input id="attr3" type="range" min="0" max="4" step="1" value"0">körperlicher Genuss</input><br>
+				<input id="attr4" type="range" min="0" max="4" step="1" value"0">kulinarischer Genuss</input><br>
+				<input id="attr5" type="range" min="0" max="4" step="1" value"0">Chance</input><br>
+				<input id="attr6" type="range" min="0" max="4" step="1" value"0">Geselligkeit</input><br>
+				
+				<button onclick="createPlaylist()">Playliste generieren</button>
+				<br>
 				<input id="videowahl" type="range" min="0" max="3" step="1" value"0"><p id="wert"></p></input>
 				<button onclick="videoWahl()">Test Input</button>
+				<p id="playlist"></p>
 					<div id="debug">
 						<p>clipname:</p><p id="clipname"></p>
 						<p>position begin:</p><p id="begin"></p>
@@ -36,13 +41,14 @@
 						<p>position end:</p><p id="end"></p>
 					</div>	
 			</div>
-			
-			<video id="video" muted autoplay loop poster="example.jpg">  
+			<!---
+			<video id="video" muted autoplay loop>  
 			</video>
+			-->
 
 
 			</div>
-		</div>
+			<!--	</div> -->
 	</body>
 
 </html>
