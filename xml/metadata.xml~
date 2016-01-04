@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <clips>
 	<clip>
 		<name>example.mp4</name>
@@ -14,7 +14,7 @@
 		<_media>video</_media>
 	</clip>
 	<clip>
-		<name>example2.mp4</name>
+		<name>example.mp4</name>
 		<abenteuer>5</abenteuer>
 		<geborgenheit>3</geborgenheit>
 		<geselligkeit>2</geselligkeit>
@@ -52,7 +52,4 @@
 		<pos_hinten>false</pos_hinten>
 		<_media>video</_media>
 	</clip>
-
-
-
 </clips>

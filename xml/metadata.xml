@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <clips>
 	<clip>
 		<name>example.mp4</name>
@@ -52,7 +52,4 @@
 		<pos_hinten>false</pos_hinten>
 		<_media>video</_media>
 	</clip>
-
-
-
 </clips>
