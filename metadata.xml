@@ -52,4 +52,19 @@
 		<pos_hinten>false</pos_hinten>
 		<_media>video</_media>
 	</clip>
+	<clip>
+		<name>example5.mp4</name>
+		<abenteuer>3</abenteuer>
+		<geborgenheit>2</geborgenheit>
+		<geselligkeit>1</geselligkeit>
+		<koer_genuss>0</koer_genuss>
+		<kulin_genuss>0</kulin_genuss>
+		<chance>4</chance>
+		<pos_vorne>true</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>true</pos_hinten>
+		<_media>video</_media>
+	</clip>
+
+
 </clips>
