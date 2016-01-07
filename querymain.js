@@ -35,6 +35,13 @@ var attr4 = $('#attr4').val();
 var attr5 = $('#attr5').val();
 var attr6 = $('#attr5').val();
 
+// reset Arrays
+begin.length = 0;
+middle.length = 0;
+end.length = 0;
+playlist.length = 0;
+
+
 // retrieve data from xml with jQuery.ajax method 
 $.ajax({
 	type: "GET",
@@ -118,35 +125,61 @@ $.ajax({
 		    end.push(name);
 		    }
 
-		    // resulting arrays have dublicate objects in them; NOTE #2: Implement dublicate filter for arrays!
-		    // filter function solution: http://mikeheavers.com/main/code-item/removing_duplicates_in_an_array_using_javascript  
 
 		    console.log("begin:", begin);
 		    console.log("middle", middle);
 		    console.log("end", end);
 
+
+
+	            var uniqueBegin = begin.filter(function(elem, pos) {
+    			return begin.indexOf(elem) == pos;
+  		    }); // end uniquePlaylist 
+
+	            var uniqueMiddle = middle.filter(function(elem, pos) {
+    			return middle.indexOf(elem) == pos;
+  		    }); // end uniquePlaylist 
+
+	            var uniqueEnd = end.filter(function(elem, pos) {
+    			return end.indexOf(elem) == pos;
+  		    }); // end uniquePlaylist 
+
+
 		    console.log("--------------");
 
-		     // scramble the chosen values from generated position-arrays
+		     // scramble chosen values from generated position-arrays and put them into respective positions of our playlist 
+		    
 
-		    random_Begin = begin[Math.floor(Math.random() * begin.length)];		    
-		    playlist.push(random_Begin);
+		    random_Begin = begin[Math.floor(Math.random() * uniqueBegin.length)];		    
+		    playlist[0] = random_Begin;
 
-		    random_Middle = begin[Math.floor(Math.random() * middle.length)];
-		    playlist.push(random_Middle);
+		    random_Middle = begin[Math.floor(Math.random() * uniqueMiddle.length)];
+		    playlist[1] = random_Middle;
 
-		    random_Middle2 =  begin[Math.floor(Math.random() * middle.length)];
-		    playlist.push(random_Middle);
+		    random_Middle2 =  begin[Math.floor(Math.random() * uniqueMiddle.length)];
+		    playlist[2] = random_Middle;
 
-		    random_End = begin[Math.floor(Math.random() * end.length)];
-		    playlist.push(random_End);
+		    random_End = begin[Math.floor(Math.random() * uniqueEnd.length)];
+		    playlist[3] = random_End;
+		    
 
+
+		    // no-surprise version: every ticket generates unique playlist
+		    /*
+		    playlist.push.apply(playlist, begin);
+		    playlist.push.apply(playlist, middle);
+		    playlist.push.apply(playlist, end);
+		    */		    
+		    // remove empty, undefined cells from playlist
+		    /*
+		    playlist = playlist.filter(function(n){ return n != undefined });
+	            */
 		    // removing dublicates from final playlist
 
 
 	            var uniquePlaylist = playlist.filter(function(elem, pos) {
     			return playlist.indexOf(elem) == pos;
-  		    }); // end uniquePlaylist 
+  		    }); // end uniquePlaylist
 
 
 
@@ -157,14 +190,16 @@ $.ajax({
 
 		    console.log("Ticket:", attr1, attr2, attr3, attr4, attr5, attr6);
 		
-	$("#XMLread").append('<li>' +pos_begin+ '-' +pos_middle+ '-' +pos_end+ '-' +abenteuer+ '-' +name+ '</li>');
 		
 		})
 		
+	$("#playlist").html(""); // clear old elements before .append new ones
+	$("#playlist").append('<br>'+playlist[0]+'<br>' +playlist[1]+ '<br>' +playlist[2]+ '<br>' +playlist[3]+'<br>');
+
 		}, // end function(xml)
 		
 		error: function(){ 
-			console.log("something's wrong Diane");
+			alert("something's wrong Diane");
 		} // end error handler
 
 
@@ -172,5 +207,5 @@ $.ajax({
 }); // end .click(function(event)
 
 
-})
+}) //end jQuery
 
