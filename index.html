@@ -3,7 +3,7 @@
 <html>
 
 	<head>
-                <title>metamachine v.0.01</title>
+                <title>metamachine v.0.03</title>
 
 		<meta charset="UTF-8"> 
 
@@ -12,23 +12,25 @@
 		<!---	<script type="text/javascript" src="main.js" async></script> -->
 		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
 		<script type="text/javascript" src="querymain.js"></script>
+		<script type="text/javascript" src="LifemirrorPlayer.js"></script>
 	</head>
 
 	<body>
 		<!---	<div id="player"> -->
+		<div id="middle">
 			<div id="header">
-				<h1>&lt/metamachine</h1>
+				<h1>metamachine</h1>
+				<span>v.0.03</span>
 			</div>
 
 			<div id="menu">
 				
-				<input id="attr1" type="range" min="0" max="5" step="1" value"1">Abenteuer</input><br>
-				<input id="attr2" type="range" min="0" max="5" step="1" value"1">Geborgenheit</input><br>
-				<input id="attr3" type="range" min="0" max="5" step="1" value"1">körperlicher Genuss</input><br>
-				<input id="attr4" type="range" min="0" max="5" step="1" value"1">kulinarischer Genuss</input><br>
-				<input id="attr5" type="range" min="0" max="5" step="1" value"1">Chance</input><br>
-				<input id="attr6" type="range" min="0" max="5" step="1" value"1">Geselligkeit</input><br>
-				
+				<input id="attr1" type="range" min="0" max="5" step="1" value"1">Liebe</input><br>
+				<input id="attr2" type="range" min="0" max="5" step="1" value"1">Glück</input><br>
+				<input id="attr3" type="range" min="0" max="5" step="1" value"1">Tradition</input><br>
+				<input id="attr4" type="range" min="0" max="5" step="1" value"1">Abenteuer</input><br>
+				<input id="attr5" type="range" min="0" max="5" step="1" value"1">Perfektion</input><br>
+				<br>
 				<button id="generatePlaylist">Playliste generieren</button>
 				<br>
 				<p id="playlist"></p>
@@ -36,14 +38,7 @@
 						<ul id="XMLread"></ul>
 					</div>	
 			</div>
-			<!---
-			<video id="video" muted autoplay loop>  
-			</video>
-			-->
-
-
-			</div>
-			<!--	</div> -->
+		</div>
 	</body>
 
 </html>
