@@ -1,4 +1,4 @@
-# Project MetaJS — metamachine v.0.0.3
+# Project MetaJS — metamachine v.0.3
 rewritten for the web!
 
 ## Features
