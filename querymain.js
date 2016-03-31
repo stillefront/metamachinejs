@@ -146,7 +146,7 @@ $.ajax({
 		    indexes[3] = random_End;
 		 
 
-		    // Prompt indexs in HTML	
+		    // Prompt indices in HTML	
 			$("#playlist").html(""); // clear old elements before .append new ones
 			for(i = 0; i < indexes.length; i++){
 				$("#playlist").append('<br>'+indexes[i]);

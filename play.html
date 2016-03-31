@@ -3,7 +3,7 @@
 <html>
 
 	<head>
-                <title>metamachine v.0.02 — player</title>
+                <title>metamachine v.0.03 — player</title>
 
 		<meta charset="UTF-8"> 
 
@@ -12,11 +12,15 @@
 		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
 		<script type="text/javascript" src="playHandler.js"></script>
 		<script type="text/javascript" src="LifemirrorPlayer.js"></script>
+		<script type="text/javascript" src="moodPlayer.js"></script>
 	</head>
 
 	<body>
 		<div id="film"> </div>
-		<div id="player" onClick="LifemirrorPlayer.pause()">
+		<div id="audiomood"></div>
+
+
+		<div id="player" onClick="LifemirrorPlayer.pause(), moodPlayer.pause();">
 			
 			<!-- UI -->
 			<div id="header">
