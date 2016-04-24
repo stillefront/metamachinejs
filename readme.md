@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Project MetaJS — metamachine v.0.0.4
+# Project MetaJS — metamachine v.0.0.5
 rewritten for the web!
 
 ## Features
@@ -9,20 +8,17 @@ rewritten for the web!
 - On mouseover show Playler UI (still very very basic)
 - Click to pause video
 - Click to pause background audio
+- Click to pause background speech
 =======
-# Project MetaJS — metamachine v.0.3
-rewritten for the web!
-
-## Features
-- generator and player on 2 seperate pages, seperate JS & CSS files
-- generate playlist of 4 elements, large number possible
-- autoplay once, repeat video
-- on mouseover show player UI (still very very basic)
-- click to pause video
-
->>>>>>> a548beb96cf20b7d2553bc1326942e63ec824d16
 ## Issues
 - performance not optimized
+- doesn't play videos or sound if one object in playlist array is 'undefined' 
 
 ## Bugs
 yet none known
+
+## In future releases
+- prettier GUI
+- fade in and fade out for generated clip
+- one playlist generator class for all (LifeMirror + speechPlayer merging)
+- prettier landingpage with explanation of the project
