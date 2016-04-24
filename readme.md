@@ -9,7 +9,7 @@ rewritten for the web!
 - Click to pause video
 - Click to pause background audio
 - Click to pause background speech
-=======
+
 ## Issues
 - performance not optimized
 - doesn't play videos or sound if one object in playlist array is 'undefined' 
