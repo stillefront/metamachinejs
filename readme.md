@@ -1,5 +1,6 @@
 # Project MetaJS — metamachine v.0.0.5
 rewritten for the web!
+![screenshot of 0.0.5](https://github.com/stillefront/metamachinejs/blob/master/screenshot005.png)
 
 ## Features
 - Generater and Player on 2 seperate pages, seperate JS & CSS files
