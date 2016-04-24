@@ -3,7 +3,7 @@
 <html>
 
 	<head>
-                <title>metamachine v.0.03</title>
+                <title>metamachine v.0.05</title>
 
 		<meta charset="UTF-8"> 
 
@@ -13,6 +13,7 @@
 		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
 		<script type="text/javascript" src="querymain.js"></script>
 		<script type="text/javascript" src="LifemirrorPlayer.js"></script>
+		<script type="text/javascript" src="speechPlayer.js"></script>
 	</head>
 
 	<body>
@@ -20,7 +21,7 @@
 		<div id="middle">
 			<div id="header">
 				<h1>metamachine</h1>
-				<span>v.0.03</span>
+				<span>v.0.05</span>
 			</div>
 
 			<div id="menu">
@@ -30,6 +31,8 @@
 				<input id="attr3" type="range" min="0" max="5" step="1" value"1">Tradition</input><br>
 				<input id="attr4" type="range" min="0" max="5" step="1" value"1">Abenteuer</input><br>
 				<input id="attr5" type="range" min="0" max="5" step="1" value"1">Perfektion</input><br>
+				<input id="female" type="radio" name="gender" value="female" checked>weibl. Stimme</input><br>
+				<input id="male" type="radio" name="gender" value="male">männl. Stimme</input><br>
 				<br>
 				<button id="generatePlaylist">Playliste generieren</button>
 				<br>

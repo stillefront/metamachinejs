@@ -15,6 +15,7 @@ function moodPlayer(moodUrl,video){
 	document.getElementById('audiomood').innerHTML = '<audio id="mood2"><source src="'+ moodUrl +'" type="audio/mpeg"></audio>';
 	
 	var sound = document.getElementById('mood2');
+	sound.volume = 0.2;
 
 
 	sound.currentTime = video.currentTime; //sync audio to video and then .play()!

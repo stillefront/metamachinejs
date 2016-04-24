@@ -415,7 +415,7 @@
 		<_media>video</_media>
 	</clip>
 	<clip>
-		<name>v_02_03_m.mp4.mp4</name>
+		<name>v_02_03_m.mp4</name>
 		<liebe>0</liebe>
 		<glueck>2</glueck>
 		<tradition>5</tradition>
@@ -1263,7 +1263,258 @@
 <_media>video</_media>
 </clip>
 
+<!-- speech audio section -->
+
+	<clip>
+		<name>a_f_1_a_1.mp3</name>
+		<liebe>5</liebe>
+		<glueck>0</glueck>
+		<glueck>0</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>true</pos_vorne>
+		<pos_mitte>false</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<sex>f</sex>
+		<_media>speech</_media>         
+	</clip>
+
+	<clip>
+		<name>a_f_1_m_1.mp3</name>
+		<liebe>5</liebe>
+		<glueck>0</glueck>
+		<glueck>0</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<sex>f</sex>
+		<_media>speech</_media>         
+	</clip>
+
+	<clip>
+		<name>a_f_1_e_1.mp3</name>
+		<liebe>5</liebe>
+		<glueck>0</glueck>
+		<glueck>0</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>false</pos_mitte>
+		<pos_hinten>true</pos_hinten>
+		<sex>f</sex>
+		<_media>speech</_media>         
+	</clip>
+
+	<clip>
+		<name>a_f_1_a_2.mp3</name>
+		<liebe>0</liebe>
+		<glueck>5</glueck>
+		<glueck>0</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>true</pos_vorne>
+		<pos_mitte>false</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<sex>f</sex>
+		<_media>speech</_media>         
+	</clip>
+
+	<clip>
+		<name>a_f_1_m_2.mp3</name>
+		<liebe>0</liebe>
+		<glueck>5</glueck>
+		<glueck>0</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<sex>f</sex>
+		<_media>speech</_media>         
+	</clip>
+
+	<clip>
+		<name>a_f_1_e_2.mp3</name>
+		<liebe>0</liebe>
+		<glueck>5</glueck>
+		<glueck>0</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>false</pos_mitte>
+		<pos_hinten>true</pos_hinten>
+		<sex>f</sex>
+		<_media>speech</_media>         
+	</clip>
+
+	<clip>
+		<name>a_f_1_a_2.mp3</name>
+		<liebe>0</liebe>
+		<glueck>0</glueck>
+		<glueck>0</glueck>
+		<tradition>5</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>true</pos_vorne>
+		<pos_mitte>false</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<sex>f</sex>
+		<_media>speech</_media>         
+	</clip>
+
+	<clip>
+		<name>a_f_1_m_2.mp3</name>
+		<liebe>0</liebe>
+		<glueck>0</glueck>
+		<glueck>0</glueck>
+		<tradition>5</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<sex>f</sex>
+		<_media>speech</_media>         
+	</clip>
+
+	<clip>
+		<name>a_f_1_e_2.mp3</name>
+		<liebe>0</liebe>
+		<glueck>0</glueck>
+		<glueck>0</glueck>
+		<tradition>5</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>false</pos_mitte>
+		<pos_hinten>true</pos_hinten>
+		<sex>f</sex>
+		<_media>speech</_media>         
+	</clip>
+
+	<clip>
+		<name>a_f_1_a_3.mp3</name>
+		<liebe>0</liebe>
+		<glueck>0</glueck>
+		<glueck>0</glueck>
+		<tradition>0</tradition>
+		<abenteuer>5</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>true</pos_vorne>
+		<pos_mitte>false</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<sex>f</sex>
+		<_media>speech</_media>         
+	</clip>
+
+	<clip>
+		<name>a_f_1_m_3.mp3</name>
+		<liebe></liebe>
+		<glueck>0</glueck>
+		<glueck>0</glueck>
+		<tradition>0</tradition>
+		<abenteuer>5</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>true</pos_mitte>
+		<pos_hinten>false</pos_hinten>
+		<sex>f</sex>
+		<_media>speech</_media>         
+	</clip>
+
+	<clip>
+		<name>a_f_1_e_3.mp3</name>
+		<liebe></liebe>
+		<glueck>0</glueck>
+		<glueck>0</glueck>
+		<tradition>0</tradition>
+		<abenteuer>5</abenteuer>
+		<perfektion>0</perfektion>
+		<pos_vorne>false</pos_vorne>
+		<pos_mitte>false</pos_mitte>
+		<pos_hinten>true</pos_hinten>
+		<sex>f</sex>
+		<_media>speech</_media>         
+	</clip>
 
 
 
+
+
+
+
+<!--mood audio section -->
+
+	<clip>
+		<name>a_mood_01.mp3</name>
+		<liebe>5</liebe>
+		<glueck>0</glueck>
+		<glueck>0</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<_media>music</_media>         
+	</clip>
+	<clip>
+		<name>a_mood_02.mp3</name>
+		<liebe>0</liebe>
+		<glueck>5</glueck>
+		<glueck>0</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<_media>music</_media>         
+	</clip>
+	<clip>
+		<name>a_mood_03.mp3</name>
+		<liebe>0</liebe>
+		<glueck>0</glueck>
+		<glueck>5</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<_media>music</_media>         
+	</clip>
+	<clip>
+		<name>a_mood_04.mp3</name>
+		<liebe>0</liebe>
+		<glueck>0</glueck>
+		<glueck>0</glueck>
+		<tradition>5</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>0</perfektion>
+		<_media>music</_media>         
+	</clip>
+	<clip>
+		<name>a_mood_05.mp3</name>
+		<liebe>0</liebe>
+		<glueck>0</glueck>
+		<glueck>0</glueck>
+		<tradition>0</tradition>
+		<abenteuer>5</abenteuer>
+		<perfektion>0</perfektion>
+		<_media>music</_media>         
+	</clip>
+	<clip>
+		<name>a_mood_05.mp3</name>
+		<liebe>0</liebe>
+		<glueck>0</glueck>
+		<glueck>0</glueck>
+		<tradition>0</tradition>
+		<abenteuer>0</abenteuer>
+		<perfektion>5</perfektion>
+		<_media>music</_media>         
+	</clip>
 </clips>
+
+
+
+

@@ -3,7 +3,7 @@
  * @author LifeMirror http://www.lifemirror.org/
  * @constructor
  * 
- * modifications done by Martin Stelter, University of the Arts, Berlin
+ * modifications done by Martin Stelter & Alexej Bormatenkow, University of the Arts, Berlin
  */
 function LifemirrorPlayer() {}
 var Lifemirror = {};

@@ -8,18 +8,31 @@ $(document).ready(function(){
 
 var playlist = [];
 
+var moodPlay;
+
+var playlistAudio = [];
+
 // Fetch indexes out of URL
 var url = window.location.href; // returns URL
 var ticket = url.split('tck=')[1]; // return ticket as 1 string
 
 ticket = ticket.split('-');
 
-var indexes = url.substring( url.lastIndexOf('ixs=')+4, url.lastIndexOf('tck=')-1 ); // returns indexes as 1 string
+var indexes = url.substring( url.lastIndexOf('ixs=')+4, url.lastIndexOf('aud=') ); // returns indexes as 1 string
+
+var moodIdx = url.substring( url.lastIndexOf('md=')+3, url.lastIndexOf('tck=')); // returns mood index as string
+
+var speechIdx =  url.substring( url.lastIndexOf('aud=')+4, url.lastIndexOf('md=')); // returns speech index as string
 
 console.log("indexes", indexes);
 
+console.log("moodIdx", moodIdx);
+
+console.log("speechIdx", speechIdx);
+
 indexes = indexes.split('-'); // splits id into array of playlist indexes
 
+speechIdx = speechIdx.split('-'); // same procedure for our speech-playlist
 
 $.ajax({
 	type: "GET",
@@ -35,37 +48,47 @@ $.ajax({
 		}
 		console.log("playlist", playlist);
 
+		//Fetch file name for mood-soundtrack out of XML
+		moodPlay = $('name:eq( '+moodIdx+' )', xml).text(); // http://stackoverflow.com/questions/10343150/the-jquery-eqindex-selector/
+		console.log('moodPlay', moodPlay);
+
+		//Fetch file name for speech-audiotracks out of XML
+		for(i = 0; i < speechIdx.length; i++) {
+			playlistAudio[i] = $('name:eq( '+speechIdx[i]+' )',xml).text();
+		}
+		console.log("playlistAudio", playlistAudio);
+
+
 
 		// Lifemirror Player Video
 	    var player = new LifemirrorPlayer();
+	    var audio = new speechPlayer();
+
+
 	    var url = window.location.href; // returns URL
 	    var dir = url.substring(0, url.lastIndexOf('/'));  // returns directory only
-	       
+	    console.log(dir);
+	    console.log(url);
+
 		    player.initialise(playlist, "film", dir+"/vid/", null);  // see LifemirrorPlayer.js lines 19-26
+		    audio.initialise(playlistAudio, "speech", dir+"/aud/speech/", null);
+		    
+		    audio.preloadAudio();
 		    player.preloadVideos();
 
 	       // Audio Setup #1: moodPlayer
 
-	    var url = "file:///home/alexej/Dokumente/repos/metamachinejs/aud/mood/moodmelodymahler.mp3"; 
+	    var moodUrl = dir + "/aud/mood/" + moodPlay; 
 	    var video = document.getElementById(countContainer);
-	    var mood = new moodPlayer(url, video);
-
-	   
-
-	    /* function moodPlayer() {
-	    var vid = document.getElementbyId('film');
-	    var aud = document.getElementbyId('audiomood');
-
-	    aud.currentTime = vid.currentTime;
-	    aud.play();
-
-	    };
-	    var audioDir = '<audio autoplay> <source src="file:///home/alexej/Dokumente/repos/metamachinejs/aud/mood/moodmelodymahler.mp3" type="audio/mpeg"></audio>'; 
-	    document.getElementById('audiomood').innerHTML = audioDir;
-	    document.getElementsById('audiomood') = moodPlayer();
-*/
+	    var mood = new moodPlayer(moodUrl, video);
 
 
+	      // Audio Setup #2: speechPlayer
+	   //var audio = new speechPlayer();
+	   //audio.initialise(playlistAudio, "speech", dir+"/aud/speech/", null);
+	   //audio.preloadAudio();
+
+	    
 
 
 
