@@ -9,7 +9,8 @@ $(document).ready(function(){
 var pos_begin,
     pos_middle,
     pos_end,
-    mediatype;	    
+    mediatype,
+    gender;
 
 var begin = [];
 var middle = [];
@@ -54,6 +55,10 @@ attr[2] = $('#attr3').val();
 attr[3] = $('#attr4').val();
 attr[4] = $('#attr5').val();
 
+// fetch parameters from HTML radio-buttons
+
+gender = $("input[name='gender']:checked").val();
+
 //fetch the max chosen value for category to determine which mood-sound has to be chosen
 function indexOfMax(arr) {
     if (arr.length === 0) {
@@ -77,6 +82,8 @@ var attrMax = indexOfMax(attr);
 
 
 var attrXML = []; // for comparison
+
+var genderXML; // for comparison of chosen speech gender
 
 // reset Arrays
 begin.length = 0;
@@ -116,6 +123,7 @@ $.ajax({
 			    attrXML[3] =  $(this).find('abenteuer').text();
 			    attrXML[4] =  $(this).find('perfektion').text();
 			    mediatype = $(this).find('_media').text();
+			    genderXML = $(this).find('sex').text();
 		          
 			    
 			    // get suitable videos for the beginning
@@ -149,7 +157,7 @@ $.ajax({
 			    //get suitable speech-audio for the beginning
 			    for(i = 0; i < attr.length; i++){
 			    
-				    if (attrXML[i] == attr[i] && pos_begin == "true" && mediatype == "speech" ) {
+				    if (attrXML[i] == attr[i] && pos_begin == "true" && genderXML == gender && mediatype == "speech" ) {
 				    beginAudio.push(index);
 
 				    }
@@ -159,7 +167,7 @@ $.ajax({
 			    //get suitable speech-audio for the middlepart
 			    for(i = 0; i < attr.length; i++){
 			    
-				    if (attrXML[i] == attr[i] && pos_begin == "true" && mediatype == "speech" ) {
+				    if (attrXML[i] == attr[i] && pos_begin == "true" && genderXML == gender && mediatype == "speech" ) {
 				    middleAudio.push(index);
 
 				    }
@@ -169,7 +177,7 @@ $.ajax({
 			    //get suitable speech-audio for the end
 			    for(i = 0; i < attr.length; i++){
 			    
-				    if (attrXML[i] == attr[i] && pos_begin == "true" && mediatype == "speech" ) {
+				    if (attrXML[i] == attr[i] && pos_begin == "true" && genderXML == gender && mediatype == "speech" ) {
 				    endAudio.push(index);
 
 				    }
